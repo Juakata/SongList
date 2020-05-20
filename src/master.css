@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px grey;
+  margin: 5px;
+  padding: 5px;
+}
+
+.song-list-item button {
+  margin-left: 20px;
+  border: 1px solid white;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.song-list-item button:hover {
+  background: white;
+  border: 1px solid black;
+  color: blue;
+}
+
+.song-detail {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media(max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

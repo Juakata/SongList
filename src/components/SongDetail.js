@@ -9,13 +9,11 @@ const SongDetail = ({ song }) => {
   }
   const { title, group, year } = song;
   return (
-    <div>
+    <div className="song-detail">
       <h1>Song Description:</h1>
-      <p>
-        Title: {title}
-        Group: {group}
-        Year: {year}
-      </p>
+      <div>Title: {title}</div>
+      <div>Group: {group}</div>
+      <div>Year: {year}</div>      
     </div>
   );
 }

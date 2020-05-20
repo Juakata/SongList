@@ -4,7 +4,7 @@ import { selectSong } from '../actions';
 
 const SongList = ({ songList, selectSong }) => {
   const renderSongList = songList.map(song => (
-    <div>
+    <div className="song-list-item">
       <h2>{song.title}</h2>
       <button
         type="button"
